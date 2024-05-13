@@ -17,7 +17,7 @@ def msp_place_order(msp, weekColumnIndex, materialInformation):
     return msp
 
 def build_msp(productInformation):
-    orders = pd.read_json("data/order.json").transpose()
+    orders = pd.read_json("data/orders.json").transpose()
     demandDict = {orders.columns.get_loc(value) + 1: [orders.at['orders', value], *[0] * 2] for value in orders.columns}
 
     msp = pd.DataFrame(demandDict)

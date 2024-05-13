@@ -1,12 +1,9 @@
 import sys
-import subprocess
-from window.Window import Window
-from PyQt6.QtWidgets import QApplication, QPushButton, QVBoxLayout, QWidget
 
-def run_project():
-    process = subprocess.Popen(["python", "main.py"], stdout=subprocess.PIPE)
-    output, error = process.communicate()
-    return output.decode("utf-8")
+from PyQt6.QtWidgets import QApplication
+
+from window.MainWindow import MainWindow
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
@@ -15,14 +12,6 @@ if __name__ == "__main__":
         style = f.read()
         app.setStyleSheet(style)
 
-    window = Window()
-
-    run_button = QPushButton("Run Project")
-    run_button.clicked.connect(lambda: window.show_result(run_project()))
-
-    layout = QVBoxLayout()
-    layout.addWidget(run_button)
-    window.setLayout(layout)
-
+    window = MainWindow()
     window.show()
-    sys.exit(app.exec())
+    app.exec()
