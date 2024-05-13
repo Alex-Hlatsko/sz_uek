@@ -1,0 +1,37 @@
+{
+    "skateboard": {
+      "ready_in_weeks": 0,
+      "storage": 0,
+      "units_per_order": 0,
+      "units_required": 0,
+      "level": 0
+    },
+    "board": {
+      "ready_in_weeks": 0,
+      "storage": 0,
+      "units_per_order": 0,
+      "units_required": 0,
+      "level": 0
+    },
+    "truck": {
+      "ready_in_weeks": 0,
+      "storage": 0,
+      "units_per_order": 0,
+      "units_required": 0,
+      "level": 0
+    },
+    "axle": {
+      "ready_in_weeks": 0,
+      "storage": 0,
+      "units_per_order": 0,
+      "units_required": 0,
+      "level": 0
+    },
+    "wheel": {
+      "ready_in_weeks": 0,
+      "storage": 0,
+      "units_per_order": 0,
+      "units_required": 0,
+      "level": 0
+    }
+  }
